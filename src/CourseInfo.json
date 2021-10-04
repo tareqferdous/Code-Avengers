@@ -1,0 +1,42 @@
+[{
+    "id": 1,
+    "name": "JavaScript For Beginners",
+    "price": 50,
+    "photo": "https://codedamn.com/_next/image?url=%2Fassets%2Fimages%2Flearnpaths%2Fjavascript.jpg&w=3840&q=75"
+  }, {
+    "id": 2,
+    "name": "Python For Beginners",
+    "price": 65,
+    "photo": "https://best-videos.online/wp-content/uploads/2021/05/maxresdefault-23.jpg"
+  }, {
+    "id": 3,
+    "name": "PHP For Beginners",
+    "price": 95,
+    "photo": "https://i.morioh.com/2019/11/02/cec1e10e3be4.jpg"
+  }, {
+    "id": 4,
+    "name": "React Crash Course",
+    "price": 80,
+    "photo": "https://www.angularminds.com/site_data/static/images/react-native-features/learn-react-native-2021.png"
+  },
+  {
+    "id": 5,
+    "name": "Dive Into Node Js",
+    "price": 50,
+    "photo": "https://i.ytimg.com/vi/RLtyhwFtXQA/maxresdefault.jpg"
+  }, {
+    "id": 6,
+    "name": "Express Js For Beginners",
+    "price": 65,
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZFui5-nwbyl1XT2K3cgGkoeczcqut_Pj5fA&usqp=CAU"
+  }, {
+    "id": 7,
+    "name": "Learn Basic Java",
+    "price": 95,
+    "photo": "https://bodelita.com/uploads/java.jpg"
+  }, {
+    "id": 8,
+    "name": "Learn Basic C++",
+    "price": 80,
+    "photo": "https://en.terminalroot.com.br/assets/img/cpp/cpp.jpg"
+  }]

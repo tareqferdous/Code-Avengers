@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './component/HomePage/Home/Home';
+import Navbar from './component/HomePage/Navbar/Navbar';
+import Footer from './component/HomePage/Footer/Footer';
+import NotFound from './component/NotFound/NotFound';
+import Contact from './component/HomePage/Contact/Contact';
+import AboutUs from './component/HomePage/AboutUs/AboutUs';
+import Features from './component/HomePage/Features/Features';
+import AllCourses from './component/AllCourses/AllCourses';
+import ViewCourse from './component/HomePage/ViewCourse/ViewCourse';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar/>
+      <Switch>
+        <Route exact path="/">
+          <Home></Home>
+        </Route>
+        <Route path="/home">
+          <Home></Home>
+        </Route>
+        <Route path="/contact">
+          <Contact></Contact>
+        </Route>
+        <Route path="/about">
+          <AboutUs></AboutUs>
+        </Route>
+        <Route path="/feature">
+          <Features></Features>
+        </Route>
+        <Route path="/courses">
+          <AllCourses></AllCourses>
+        </Route>
+        <Route path="/destination/:id">
+            <ViewCourse></ViewCourse>
+          </Route>
+        <Route path="*">
+          <NotFound></NotFound>
+        </Route>
+      </Switch>
+      <Footer></Footer>
+    </Router>
   );
 }
 
